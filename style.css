@@ -1,0 +1,387 @@
+*{
+    padding:0%;
+    margin:0%;
+}
+
+.main{
+   width:100%;
+}
+
+.container{
+    position:absolute;
+    top:0px;
+    right:0px;
+    font-family: Futura;
+    float:right;
+}
+
+.container li{
+    float:left;
+    margin-left:40px;
+    list-style:none;
+    font-size: 30px;
+}
+
+.container a{
+    color:#ffffff;
+    text-decoration: none;
+}
+
+.container a:hover{
+    color:#3D5CDB;
+    box-shadow: none;
+}
+/*なんで画像の上に<h1>が表示されないのか
+margin:0 auto;が効かずにtopとかで指定しないといけないのか*/
+.top-first{
+    position:relative;
+    width:100%;
+}
+
+.top-first img{
+    text-align: center;
+}
+.top-first p{
+   position:absolute;
+   top:0%;
+   left:50%;
+   color:blue;
+   font-size:80px;
+   /*+-ms-transform: translate(-50%,-50%);
+   -webkit-transform: translate(-50%,-50%);
+   transform: translate(-50%,-50%);*/
+}
+
+
+.logo img{
+    position:absolute;
+    top:300px;
+    left:200px;
+}
+
+.logo p{
+    font-size: 50px;
+    top:550px;
+    left:450px;
+    font-family:Futura ;
+    color:#ffffff;
+    font-style: normal;
+    font-weight: 500;
+    
+}
+
+.second{
+    width:100%;
+    background-color:#ffffff;
+    text-align: center;
+}
+/*親要素であるsecondのボックスの横幅を指定しないとh1を真ん中に指定することはできない*/
+
+/*h1を真ん中に配置したかったら、親要素のボックスをmargin:0 auto
+にしないといけない,text-align:center;を親要素に指定しないといけない理由*/
+
+#title{
+    width:30%;
+    padding:40px;
+    background-color: #ffffff;
+    text-align: center;
+    margin:0 auto;
+}
+
+#title h1{
+    font-family:Futura;
+    color:#3D5CDB;
+    font-size:50px;
+}
+
+.contents{
+    width:100%;
+    margin-top:40px;
+    background-color:#ffffff;
+    overflow: hidden;
+}
+
+#title-second h1{
+    font-family: Futura;
+    color:#3D5CDB;
+    font-size:50px;
+}
+
+/*なんで親要素にtext-align:centerをかけたり、margin:0 autoをかけないといけないのか*/
+
+.left-box{
+    width:40%;
+    float:left;
+    background-color: #ffffff;
+    text-align: center;
+    margin-left:10%;
+}
+
+
+.right-box{
+    width:40%;
+    height:25%;
+    margin-top:30px ;
+    float:left;
+    background-color: #ffffff;
+   
+}
+
+.text{
+    width:60%;
+    height:90%;
+    margin-left:20%;
+    padding-top:15px;
+    background-color: #ffffff;
+    display: inline-block;
+}
+
+.left-second-box{
+    width:40%;
+    height:25%;
+    margin-top:200px ;
+    float:left;
+    background-color:#ffffff;
+    margin-left:10%;
+   
+}
+
+.right-second-box{
+    width:40%;
+    float:left;
+    margin-top:200px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+
+.one-buttan{
+  margin-top:50px;
+  margin-left:25%;
+  border: 1px solid #3D5CDB;
+  border-radius: 12px;
+  background-color:#3D5CDB;
+  padding: 10px;
+  text-align: center;
+  width: 150px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius:15px;
+    color:white;
+}
+
+a:hover{
+    box-shadow: 0 0 8px gray;
+}
+
+.second-buttan{
+  margin-top:50px;
+  margin-left:25%;
+  border: 1px solid #FFBF00;
+  border-radius: 12px;
+  background-color:#FFBF00;
+  padding: 10px;
+  text-align: center;
+  width: 150px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius:15px;
+    color:white;;
+}
+
+.courses{
+  background-color:#BAD5F5;
+}
+
+.title-second h1{
+    font-family: Futura;
+}
+.top-course-box{
+    background-color:#BAD5F5;
+    display: inline-block;
+    width:80%;
+    height:400px;
+}
+.one-box{
+    width:250px;
+    height:350px;
+    background-color: #ffffff;
+    float:left;
+    margin-left:15px;
+    border-radius:15px;
+}
+
+.one-box img{
+    padding-top: 40px;
+}
+.one-box h4{
+    padding-top:30px;
+}
+
+.third-buttan{
+  padding-top:5px;
+  border: 1px solid #f16529;
+  border-radius: 5px;
+  background-color: #f16529;
+  color:white;
+  width: 180px;
+  text-decoration: none;
+  border-radius:15px;
+  height:35px;
+  display:inline-block;
+  margin:20px;
+}
+
+.fourth-buttan{
+  padding-top:5px;
+  border: 1px solid #29a9df;
+  border-radius: 5px;
+  background-color: #29a9df;
+  color:white;
+  width: 180px;
+  text-decoration: none;
+  border-radius:15px;
+  height:35px;
+  display:inline-block;
+  margin:20px;
+}
+
+.fifth-buttan{
+    padding-top:5px;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  background-color: #333333;
+  color:white;
+  width: 180px;
+  text-decoration: none;
+  border-radius:15px;
+  height:35px;
+  display:inline-block;
+  margin-top:40px;
+}
+
+.sixth-buttan{
+    padding-top:5px;
+  border: 1px solid #ff5252;
+  border-radius: 5px;
+  background-color: #ff5252;
+  color:white;
+  width: 180px;
+  text-decoration: none;
+  border-radius:15px;
+  height:35px;
+  display:inline-block;
+  margin-top:40px
+}
+
+.seventh-buttan{
+ padding-top:5px;
+  border: 1px solid #fed700;
+  border-radius: 5px;
+  background-color: #fed700;
+  color:white;
+  width: 180px;
+  text-decoration: none;
+  border-radius:15px;
+  height:35px;
+  display:inline-block;
+  margin:20px;
+}
+
+.eighth-buttan{
+     padding-top:5px;
+  border: 1px solid #fe7535;
+  border-radius: 5px;
+  background-color: #fe7535;
+  color:white;
+  width: 180px;
+  text-decoration: none;
+  border-radius:15px;
+  height:35px;
+  display:inline-block;
+  margin-top:40px;
+}
+
+.nineth-buttan{
+    padding-top:5px;
+  border: 1px solid #72cedd;
+  border-radius: 5px;
+  background-color: #72cedd;
+  color:white;
+  width: 180px;
+  text-decoration: none;
+  border-radius:15px;
+  height:35px;
+  display:inline-block;
+  margin-top:40px;
+}
+
+.second-box{
+    width:250px;
+    height:350px;
+    background-color:#ffffff;
+    float:left;
+    margin-left:15px;
+    display: inline-block;
+    border-radius:15px;
+}
+
+.second-box img{
+    padding-top: 90px;
+}
+
+.last-buttan{
+  padding-top:5px;
+  border: 1px solid green;
+  border-radius: 5px;
+  background-color: green;
+  color:white;
+  width: 180px;
+  text-decoration: none;
+  border-radius:15px;
+  height:35px;
+  display:inline-block;
+  margin-top:40px;
+}
+
+.bottom-course-box{
+    margin-top:20px;
+    background-color: #BAD5F5;
+    display: inline-block;
+    width:80%;
+}
+
+.inside-box{
+    display: inline-block;
+}
+
+.image{
+width:100%;
+    height:600px;
+}
+
+#images h1{
+    font-family:Futura;
+    color:#3D5CDB;
+    font-size:50px;
+}
+
+#access h1{
+    font-family:Futura;
+    color:#3D5CDB;
+    font-size:50px;
+}
+
+.last{
+    width:100%;
+    height:100px;
+}
+
+.last p{
+    padding-top:60px;
+}
+
+.last p{
+    font-family: Futura;
+    color:#3D5CDB;
+}
