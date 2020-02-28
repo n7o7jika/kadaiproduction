@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" media="screen" />
+      <link rel="stylesheet" href="style.css">
     <title>Happy Hack</title>
 </head>
 <body>
@@ -11,14 +14,15 @@
        <div class="container">
     　　    <nav>
     　　        <ul>
-    　　            <li><a href="#title">Introduction</a></li>
+    　　            <li><a href="#introduction">Introduction</a></li>
     　　            <li><a href="#title-second">Courses</a></li>
     　　            <li><a href="#images">Images</a></li>
     　　            <li><a href="#access">Access</a></li>
     　　        </ul>
     　　    </nav>
     　　</div>
-       <img src="images/background4.jpg" alt="" width="100%">
+    　　
+       <div class="bg-switcher">
        <div class="logo">
        <img src="images/logo.png" alt="" width="70%">
        <p>We are Webdesigner</p>
@@ -27,10 +31,13 @@
   
   <div class="second">
       <div id="title">
+         <div id="introduction">
           <h1>Introduction</h1>
+          </div>
       </div>
       
-      <div class="contents">
+      <div id="contents">
+         <div class="box-box">
           <div class="left-box">
               <img src="images/introduction_001.jpg" width="70%" >
           </div>
@@ -43,76 +50,152 @@
               <a href="" class="one-buttan">会員登録</a>
              </div>
           </div>
+          </div>
+          
+          <div class="box-box-box">
           <div class="left-second-box">
               <div class="text">
                 <p>Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミングを学びます。コースは全部で7つ準備をしています。<br>
                 WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広くお楽しみいただけます。<br>
                 自分の想いをカタチにして発信することをぜひこの場で体験してみてください。世界が変わって見えるかもしれません。<br>
               </p>
+              </div>
               <a href="" class="second-buttan">会員登録</a>
-             </div>
           </div>
           <div class="right-second-box">
               <img src="images/introduction_002.jpg" alt="" width="70%" >
           </div>
+    　    </div>
     　</div>
+      </div>
+      </div>
 　　　　
-    　<div class="courses">
-    　 <div id="title-second">
+    　<div id="courses">
+    　
+    　     <div class="title-second">
     　     <h1>Courses</h1>
-    　 </div>
-    　 <div class="course-box">
-    　     <div class="top-course-box">
-    　     <div class="inside-box">
+    　     </div>
+    　 
+    　     <div class="course-box">
+    　 
+    　         <div class="card-box">
+    　     
+    　     
     　         <div class="one-box">
-    　             <img src="images/html.png" alt="" width="40%">
-    　             <h4>HTMLコース</h4>
-    　             <a href="" class="third-buttan">このコースを受ける</a>
-    　         </div>
-    　         <div class="one-box">
-    　             <img src="images/css.png" alt="" width="35%">
-    　             <h4>CSSコース</h4>
-    　             <a href="" class="fourth-buttan">このコースを受ける</a>
-    　         </div>
-    　         <div class="second-box">
-    　             <img src="images/unity.png" alt="" width="38%">
-    　             <h4>Unityコース</h4>
-    　             <a href="" class="fifth-buttan">このコースを受ける</a>
-    　         </div>
-    　         <div class="second-box">
-    　             <img src="images/ruby.png" alt="" width="38%">
-    　             <h4>Rubyコース</h4>
-    　             <a href="" class="sixth-buttan">このコースを受ける</a>
-    　         </div>
-    　         </div>
+    　             <div class="course-card">
+    　             
+    　                 <img src="images/html.png" alt="" width="40%">
+
+    　             
+    　                 <h4>HTMLコース</h4>
+    　            
+    　                 <div id="HTML">
+    　                 <a href="" id="third-buttan">このコースを受ける</a>
+    　                 </div>
+    　               </div>
     　         </div>
     　         
-    　       <div class="bottom-course-box">
-    　       <div class="inside-box">
     　         <div class="one-box">
-    　             <img src="images/js.png" alt="" width="40%">
-    　             <h4>Java Scriptコース</h4>
-    　             <a href="" class="seventh-buttan">このコースを受ける</a>
+    　             <div class="course-card">
+    　             
+    　                 <img src="images/css.png" alt="" width="40%">
+
+    　             
+    　                 <h4>CSSコース</h4>
+    　            
+    　                 <div id="CSS">
+    　                 <a href="" id="fourth-buttan">このコースを受ける</a>
+    　                 </div>
+    　               </div>
     　         </div>
-    　         <div class="second-box">
-    　             <img src="images/swift.png" alt="" width="35%">
-    　             <h4>Swiftコース</h4>
-    　             <a href="" class="eighth-buttan">このコースを受ける</a>
+    　         
+    　          <div class="one-box">
+    　             <div class="course-second-card">
+    　             
+    　                 <img src="images/unity.png" alt="" width="40%">
+
+    　                 
+    　                 <h4>Unityコース</h4>
+    　            
+    　                 <div id="Unity">
+    　                 <a href="" id="fifth-buttan">このコースを受ける</a>
+    　                 </div>
+    　               </div>
     　         </div>
-    　         <div class="second-box">
-    　             <img src="images/go.png" alt="" width="38%">
-    　             <h4>Goコース</h4>
-    　             <a href="" class="nineth-buttan">このコースを受ける</a>
+    　         
+    　         <div class="one-box">
+    　             <div class="course-second-card">
+    　             
+    　                 <img src="images/ruby.png" alt="" width="40%">
+
+    　                 
+    　                 <h4>Rubyコース</h4>
+    　            
+    　                 <div id="Ruby">
+    　                 <a href="" id="sixth-buttan">このコースを受ける</a>
+    　                 </div>
+    　               </div>
     　         </div>
+    　         
+    　         <div class="one-box">
+    　             <div class="course-card">
+    　             
+    　                 <img src="images/js.png" alt="" width="40%">
+
+    　             
+    　                 <h4>Java Scriptコース</h4>
+    　            
+    　                 <div id="Javascript">
+    　                 <a href="" id="seventh-buttan">このコースを受ける</a>
+    　                 </div>
+    　               </div>
     　         </div>
-          </div>
+    　         
+    　         <div class="one-box">
+    　             <div class="course-second-card">
+    　             
+    　                 <img src="images/swift.png" alt="" width="40%">
+
+    　                 
+    　                 <h4>Swiftコース</h4>
+    　            
+    　                 <div id="Swift">
+    　                 <a href="" id="eighth-buttan">このコースを受ける</a>
+    　                 </div>
+    　               </div>
+    　         </div>
+    　         
+    　        <div class="one-box">
+    　             <div class="course-second-card">
+    　             
+    　                 <img src="images/go.png" alt="" width="40%">
+
+    　                 
+    　                 <h4>Goコース</h4>
+    　            
+    　                 <div id="Swift">
+    　                 <a href="" id="nineth-buttan">このコースを受ける</a>
+    　                 </div>
+    　               </div>
+    　         </div>
+    　       
     　   
     　 </div>
-    　</div>
-            <div class="image">
-               <div id="images">
+    　 </div>
+      </div>
+           
+            <div id="image">
+               <div class="images">
                 <h1>Images</h1>
                 </div>
+               <ul class="slider">
+                 <li><a href="#"><img src="images/background2.jpg"></a></li>
+                 <li><a href="#"><img src="images/background3.jpg"></a></li>
+                 <li><a href="#"><img src="images/background4.jpg"></a></li>
+                 <li><a href="#"><img src="images/background5.jpg"></a></li>
+                 <li><a href="#"><img src="images/introduction_001.jpg"></a></li>
+                </ul>
+
             </div>
             
             <div class="access">
@@ -122,13 +205,22 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.3131287759797!2d135.49025991514364!3d34.697281280435476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6f359905ed7%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1582226745905!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="">
                 </iframe>
             </div>
+            
       <footer class="last">
+         <div id="footer">
           <p>&copy;2019Happy Hack Inc.</p>
+          </div>
       </footer>
           
-    </div>
+    
+    
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="jquery.bgswitcher.js"></script>
+     <script src="slideshow.js"></script>
+     <script src="image.js"></script>
+    <script src="slick/slick.min.js"></script>
+    
     </div>
    
-    
 </body>
 </html>

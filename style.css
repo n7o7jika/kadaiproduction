@@ -38,9 +38,33 @@ margin:0 auto;が効かずにtopとかで指定しないといけないのか*/
     width:100%;
 }
 
-.top-first img{
-    text-align: center;
+<style>
+html, body {
+    height: 100%;
+    margin: 0!important;
+    padding: 0!important;
 }
+
+.bg-switcher {
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bg-title {
+    color: black;
+    font-size: 50px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
+    font-family: "Futura";
+}
+</style>
+
 .top-first p{
    position:absolute;
    top:0%;
@@ -59,9 +83,14 @@ margin:0 auto;が効かずにtopとかで指定しないといけないのか*/
     left:200px;
 }
 
+.logo{
+    positon:relative;
+}
+
 .logo p{
+    position:absolute;
     font-size: 50px;
-    top:550px;
+    top:600px;
     left:450px;
     font-family:Futura ;
     color:#ffffff;
@@ -69,23 +98,21 @@ margin:0 auto;が効かずにtopとかで指定しないといけないのか*/
     font-weight: 500;
     
 }
-
+/*secondのところにtextalign:center;をかけるとなんかしたのcoursesとかもおかしくなるのはなんでだ？*/
 .second{
     width:100%;
     background-color:#ffffff;
-    text-align: center;
 }
 /*親要素であるsecondのボックスの横幅を指定しないとh1を真ん中に指定することはできない*/
 
-/*h1を真ん中に配置したかったら、親要素のボックスをmargin:0 auto
+/*h1を真ん中に配置したかったら、自分にのボックスをmargin:0 auto
 にしないといけない,text-align:center;を親要素に指定しないといけない理由*/
 
-#title{
-    width:30%;
-    padding:40px;
-    background-color: #ffffff;
+#introduction{
     text-align: center;
-    margin:0 auto;
+    background-color:#ffffff;
+    margin:50px;
+    
 }
 
 #title h1{
@@ -94,11 +121,17 @@ margin:0 auto;が効かずにtopとかで指定しないといけないのか*/
     font-size:50px;
 }
 
-.contents{
+#contents{
     width:100%;
     margin-top:40px;
     background-color:#ffffff;
     overflow: hidden;
+}
+
+#title-second{
+    background-color:#ffffff;
+    margin:50px;
+    text-align: center;
 }
 
 #title-second h1{
@@ -108,6 +141,7 @@ margin:0 auto;が効かずにtopとかで指定しないといけないのか*/
 }
 
 /*なんで親要素にtext-align:centerをかけたり、margin:0 autoをかけないといけないのか*/
+/*introductionのところ*/
 
 .left-box{
     width:40%;
@@ -121,7 +155,6 @@ margin:0 auto;が効かずにtopとかで指定しないといけないのか*/
 .right-box{
     width:40%;
     height:25%;
-    margin-top:30px ;
     float:left;
     background-color: #ffffff;
    
@@ -131,32 +164,54 @@ margin:0 auto;が効かずにtopとかで指定しないといけないのか*/
     width:60%;
     height:90%;
     margin-left:20%;
-    padding-top:15px;
     background-color: #ffffff;
     display: inline-block;
+}
+
+.box-box{
+    margin-bottom:20px;
+    
+}
+
+
+
+.seventh-buttan{
+ padding-top:5px;
+  border: 1px solid #fed700;
+  border-radius: 5px;
+  background-color: #fed700;
+  color:white;
+  width: 180px;
+  text-decoration: none;
+  border-radius:15px;
+  height:35px;
+  display:inline-block;
+  margin:20px;
 }
 
 .left-second-box{
     width:40%;
     height:25%;
-    margin-top:200px ;
     float:left;
     background-color:#ffffff;
     margin-left:10%;
-   
 }
 
 .right-second-box{
     width:40%;
     float:left;
-    margin-top:200px;
     background-color: #ffffff;
     text-align: center;
+    
+}
+
+.right-second-box img{
+    margin-top: 25px;
 }
 
 
 .one-buttan{
-  margin-top:50px;
+  margin-top:30px;
   margin-left:25%;
   border: 1px solid #3D5CDB;
   border-radius: 12px;
@@ -175,7 +230,7 @@ a:hover{
 }
 
 .second-buttan{
-  margin-top:50px;
+  margin-top:40px;
   margin-left:25%;
   border: 1px solid #FFBF00;
   border-radius: 12px;
@@ -186,110 +241,73 @@ a:hover{
   display: inline-block;
   text-decoration: none;
   border-radius:15px;
-    color:white;;
+    color:white;
 }
 
-.courses{
+#courses{
   background-color:#BAD5F5;
+}
+
+.title-second{
+    background-color:#BAD5F5;
 }
 
 .title-second h1{
     font-family: Futura;
+    color: #3D5CDB;
+    font-size: 50px;
+    text-align: center;
 }
-.top-course-box{
-    background-color:#BAD5F5;
-    display: inline-block;
-    width:80%;
-    height:400px;
+
+/*ここからなり*/
+
+
+.course-box{
+    position:relative;
+    margin:0 auto;
+    width:100%;
+    background-color:darkred;
 }
+
+
+.card-box{
+    width:70%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform : translate(-50%,0);
+    transform : translate(-50%,0);
+    background-color: aqua;
+}
+
 .one-box{
-    width:250px;
+    width:220px;
     height:350px;
-    background-color: #ffffff;
+    margin: 0 auto;
+    background-color:teal;
     float:left;
-    margin-left:15px;
+    margin-right:20px;
     border-radius:15px;
+    text-align: center;
 }
 
-.one-box img{
-    padding-top: 40px;
+.course-card img{
+   text-align: center;
+    margin-top:15px;
+    
 }
+
 .one-box h4{
-    padding-top:30px;
-}
-
-.third-buttan{
-  padding-top:5px;
-  border: 1px solid #f16529;
-  border-radius: 5px;
-  background-color: #f16529;
-  color:white;
-  width: 180px;
-  text-decoration: none;
-  border-radius:15px;
-  height:35px;
-  display:inline-block;
-  margin:20px;
-}
-
-.fourth-buttan{
-  padding-top:5px;
-  border: 1px solid #29a9df;
-  border-radius: 5px;
-  background-color: #29a9df;
-  color:white;
-  width: 180px;
-  text-decoration: none;
-  border-radius:15px;
-  height:35px;
-  display:inline-block;
-  margin:20px;
-}
-
-.fifth-buttan{
-    padding-top:5px;
-  border: 1px solid #333333;
-  border-radius: 5px;
-  background-color: #333333;
-  color:white;
-  width: 180px;
-  text-decoration: none;
-  border-radius:15px;
-  height:35px;
-  display:inline-block;
   margin-top:40px;
+    margin-bottom: 20px;
 }
 
-.sixth-buttan{
-    padding-top:5px;
-  border: 1px solid #ff5252;
-  border-radius: 5px;
-  background-color: #ff5252;
-  color:white;
-  width: 180px;
-  text-decoration: none;
-  border-radius:15px;
-  height:35px;
-  display:inline-block;
-  margin-top:40px
+.course-card-img{
+    text-align: center;
+    margin-top:10px;
 }
 
-.seventh-buttan{
- padding-top:5px;
-  border: 1px solid #fed700;
-  border-radius: 5px;
-  background-color: #fed700;
-  color:white;
-  width: 180px;
-  text-decoration: none;
-  border-radius:15px;
-  height:35px;
-  display:inline-block;
-  margin:20px;
-}
-
-.eighth-buttan{
-     padding-top:5px;
+#third-buttan{
   border: 1px solid #fe7535;
   border-radius: 5px;
   background-color: #fe7535;
@@ -298,12 +316,76 @@ a:hover{
   text-decoration: none;
   border-radius:15px;
   height:35px;
-  display:inline-block;
-  margin-top:40px;
+  padding:10px;
 }
 
-.nineth-buttan{
-    padding-top:5px;
+#fourth-buttan{
+  border: 1px solid #29a9df;
+  border-radius: 5px;
+  background-color: #29a9df;
+  color:white;
+  width: 180px;
+  text-decoration: none;
+  border-radius:15px;
+  height:35px;
+  padding:10px
+}
+
+.course-second-card img{
+    text-align: center;
+    margin-top:70px;
+}
+
+#fifth-buttan{
+  padding:10px;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  background-color: #333333;
+  color:white;
+  width: 180px;
+  text-decoration: none;
+  border-radius:15px;
+  height:35px;
+}
+
+#sixth-buttan{
+padding:10px;
+  border: 1px solid #ff5252;
+  border-radius: 5px;
+  background-color: #ff5252;
+  color:white;
+  width: 180px;
+  text-decoration: none;
+  border-radius:15px;
+  height:35px;
+}
+
+#seventh-buttan{
+  padding:10px;
+  border: 1px solid #fed700;
+  border-radius: 5px;
+  background-color: #fed700;
+  color:white;
+  width: 180px;
+  text-decoration: none;
+  border-radius:15px;
+  height:35px;
+}
+
+#eighth-buttan{
+  padding:10px;
+  border: 1px solid #fe7535;
+  border-radius: 5px;
+  background-color: #fe7535;
+  color:white;
+  width: 180px;
+  text-decoration: none;
+  border-radius:15px;
+  height:35px;
+}
+
+#nineth-buttan{
+  padding:10px;
   border: 1px solid #72cedd;
   border-radius: 5px;
   background-color: #72cedd;
@@ -312,58 +394,57 @@ a:hover{
   text-decoration: none;
   border-radius:15px;
   height:35px;
-  display:inline-block;
-  margin-top:40px;
 }
 
-.second-box{
-    width:250px;
-    height:350px;
-    background-color:#ffffff;
-    float:left;
-    margin-left:15px;
-    display: inline-block;
-    border-radius:15px;
-}
-
-.second-box img{
-    padding-top: 90px;
-}
-
-.last-buttan{
-  padding-top:5px;
-  border: 1px solid green;
-  border-radius: 5px;
-  background-color: green;
-  color:white;
-  width: 180px;
-  text-decoration: none;
-  border-radius:15px;
-  height:35px;
-  display:inline-block;
-  margin-top:40px;
-}
-
-.bottom-course-box{
-    margin-top:20px;
-    background-color: #BAD5F5;
-    display: inline-block;
-    width:80%;
-}
-
-.inside-box{
-    display: inline-block;
-}
-
-.image{
+#image{
 width:100%;
-    height:600px;
+height:600px;
 }
 
-#images h1{
+.images{
+    background-color:#ffffff;
+    margin:50px;
+    text-align: center;
+}
+
+.images h1{
     font-family:Futura;
     color:#3D5CDB;
     font-size:50px;
+}
+
+/*左右の矢印の色を変える*/
+.slick-prev:before,
+.slick-next:before {
+    color: #000;
+}
+/*左右の矢印の位置を変える*/
+.slick-next {
+    right: 20px;
+    z-index: 99;
+}
+.slick-prev {
+     left: 15px;
+    z-index: 100;
+}
+/*スライド数のドットの色を変える*/
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+    color: #000;
+}
+/*スライド画像の横幅可変*/
+img {
+    max-width: 100%;
+     height: auto;
+}
+
+.access{
+    text-align: center;
+}
+
+#access{
+ background-color:#ffffff;
+    margin:50px;
 }
 
 #access h1{
@@ -372,16 +453,21 @@ width:100%;
     font-size:50px;
 }
 
+.access iframe{
+    display: inline-block;
+}
+
 .last{
     width:100%;
     height:100px;
 }
 
-.last p{
-    padding-top:60px;
-}
-
-.last p{
+#footer p{
     font-family: Futura;
     color:#3D5CDB;
+    margin-top:60px;
+}
+
+#footer{
+    text-align: center;
 }
